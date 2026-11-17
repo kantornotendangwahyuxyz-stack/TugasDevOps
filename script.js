@@ -15,6 +15,11 @@ if (typeof document !== 'undefined') {
                 const waktu = formatWaktu();
                 if (output) {
                     output.textContent = getOutputText(waktu);
+                    output.style.opacity = '0';
+                    output.style.transition = 'opacity 0.3s ease';
+                    requestAnimationFrame(() => {
+                        output.style.opacity = '1';
+                    });
                 }
             });
         }

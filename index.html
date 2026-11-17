@@ -3,18 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan DevOps - ELIA KHOLIFATUS SAADAH</title>
+    <title>DevOps Dashboard — ELIA KHOLIFATUS SAADAH</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <h1>Halo DevOps! 🚀 — ELIA KHOLIFATUS SAADAH</h1>
-    <a href="nyawit.png">WOWO</a>
-    <p>Aplikasi Latihan Version Control, Docker Container, Unit Test & CI/CD Pipeline</p>
-    <p>Pengembangan & Pemeliharaan oleh ELIA KHOLIFATUS SAADAH</p>
-    <button id="btnClick">Mulai Belajar DevOps</button>
-    <p id="output"></p>
-</div>
+    <div class="app-background"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="brand-icon">🚀</div>
+                <div class="brand-text">
+                    <span class="brand-name">DevOps Control Center</span>
+                    <span class="brand-tag">v1.0.0</span>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">EK</div>
+                <div class="user-info">
+                    <span class="user-name">ELIA KHOLIFATUS SAADAH</span>
+                    <span class="user-role">DevOps Engineer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+
+        <!-- Hero Banner -->
+        <section class="hero-card">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span> System Status: Operational
+            </div>
+            <h1>Automated DevOps Pipeline & Container Environment</h1>
+            <p class="hero-description">
+                Aplikasi web berarsitektur modern dengan kontainerisasi Docker, pengujian otomatis Unit Test Node.js, dan integrasi CI/CD Pipeline.
+            </p>
+
+            <!-- Metrics Overview Grid -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon green">🟢</div>
+                    <div class="metric-info">
+                        <span class="metric-label">Pipeline Status</span>
+                        <span class="metric-value">PASSED</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon blue">🐳</div>
+                    <div class="metric-info">
+                        <span class="metric-label">Base Image</span>
+                        <span class="metric-value">nginx:1.27.2-alpine</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon purple">🧪</div>
+                    <div class="metric-info">
+                        <span class="metric-label">Unit Tests</span>
+                        <span class="metric-value">2/2 Passed</span>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon orange">🏷️</div>
+                    <div class="metric-info">
+                        <span class="metric-label">Git Release Tag</span>
+                        <span class="metric-value">uts-final</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Action & Terminal Section -->
+        <section class="dashboard-grid">
+            <div class="card action-card">
+                <div class="card-header">
+                    <h2>⚡ Interactive Console Trigger</h2>
+                    <span class="chip">Live Testing</span>
+                </div>
+                <p>Klik tombol di bawah untuk menyimulasikan event interaktif dan menguji modul pemroses waktu JavaScript.</p>
+                <div class="action-wrapper">
+                    <button id="btnClick" class="btn-primary">
+                        <span class="btn-icon">▶</span>
+                        <span class="btn-text">Mulai Belajar DevOps</span>
+                    </button>
+                </div>
+
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">console.log</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="prompt">$</span>
+                        <p id="output" class="output-text">Siap menerima instruksi...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Info & Config Card -->
+            <div class="card config-card">
+                <div class="card-header">
+                    <h2>⚙️ Environment Details</h2>
+                    <span class="chip outline">Config</span>
+                </div>
+                <div class="config-list">
+                    <div class="config-item">
+                        <span class="config-key">Author</span>
+                        <span class="config-val">ELIA KHOLIFATUS SAADAH</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Email</span>
+                        <span class="config-val">kantor.not.endangwahyu.xyz@gmail.com</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Port Mapping</span>
+                        <span class="config-val">8080 : 80</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Repository</span>
+                        <span class="config-val accent">TugasDevOps / git-test-main</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Test Command</span>
+                        <span class="config-val code">npm test</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 ELIA KHOLIFATUS SAADAH — Praktikum DevOps. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
