@@ -6,8 +6,6 @@ Repository ini digunakan untuk latihan version control, CI/CD pipeline, kontaine
 
 ## 👥 Pengembang / Anggota Kelompok
 - **Nama:** ELIA KHOLIFATUS SAADAH
-- **Email:** kantor.not.endangwahyu.xyz@gmail.com
-- **Repositori GitHub:** [https://github.com/kantornotendangwahyuxyz-stack/TugasDevOps](https://github.com/kantornotendangwahyuxyz-stack/TugasDevOps)
 
 ---
 
