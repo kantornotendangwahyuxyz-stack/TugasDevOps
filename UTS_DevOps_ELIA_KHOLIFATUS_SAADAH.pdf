@@ -1,0 +1,92 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+    >>
+  >>
+  /Contents 5 0 R
+>>
+endobj
+
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+
+5 0 obj
+<<
+  /Length 1250
+>>
+stream
+BT /F1 10 Tf 14 TL 50 750 Td
+(LAPORAN PRATIKUM & EVALUASI UTS DEVOPS) Tj T*
+(Nama : ELIA KHOLIFATUS SAADAH) Tj T*
+(Email : kantor.not.endangwahyu.xyz@gmail.com) Tj T*
+(Repositori : https://github.com/kantornotendangwahyuxyz-stack/TugasDevOps) Tj T*
+() Tj T*
+(1. RINGKASAN REPOSITORI DAN KONTAINERISASI DOCKER) Tj T*
+(- Base Image: nginx:1.27.2-alpine \(versi ter-pin\).) Tj T*
+(- Tag Image: git-test-app:1.0.0.) Tj T*
+(- Perintah Docker Compose: docker compose up -d \(tanpa langkah tambahan\).) Tj T*
+() Tj T*
+(2. PENGUJIEN UNIT TEST) Tj T*
+(- Framework: Node.js Test Runner \(npm test / node --test test/*.test.js\).) Tj T*
+(- Hasil: 2/2 unit test lulus.) Tj T*
+() Tj T*
+(3. CI/CD PIPELINE LOGS & FIX) Tj T*
+(- Status Pipeline: Hijau \(Passed\).) Tj T*
+(- Bukti Perbaikan: Insiden Pipeline #104 gagal pada unit test, diperbaiki pada commit fix\(script\).) Tj T*
+() Tj T*
+(4. PROTEKSI BRANCH & INTEGRASI GIT) Tj T*
+(- Main Branch: Protected.) Tj T*
+(- Commit Count: 12 commit atas nama ELIA KHOLIFATUS SAADAH.) Tj T*
+(- Tag Release: uts-final.) Tj T*
+() Tj T*
+(5. AUDIT KEAMANAN CREDENTIALS) Tj T*
+(- Bebas dari API key, token, dan kata sandi.) Tj T*
+() Tj T*
+(6. PENILAIAN SEJAWAT) Tj T*
+(- Formulir Penilaian Sejawat telah diisi lengkap.) Tj T*
+ET
+endstream
+endobj
+
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000261 00000 n
+0000000340 00000 n
+trailer
+<<
+  /Size 6
+  /Root 1 0 R
+>>
+startxref
+1650
+%%EOF
