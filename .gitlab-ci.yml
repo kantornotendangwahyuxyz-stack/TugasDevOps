@@ -1,0 +1,40 @@
+# GitLab CI/CD Configuration for Kelompok DevOps
+
+image: node:20.18.0-alpine
+
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  DOCKER_IMAGE_NAME: "git-test-app"
+  DOCKER_IMAGE_TAG: "1.0.0"
+
+unit_test:
+  stage: test
+  script:
+    - echo "Menjalankan Unit Test..."
+    - npm test
+  only:
+    - main
+    - merge_requests
+
+build_docker:
+  stage: build
+  image: docker:24.0.5-cli
+  services:
+    - docker:24.0.5-dind
+  script:
+    - echo "Membangun Docker Image dengan tag $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG..."
+    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG .
+  only:
+    - main
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Melakukan simulasi deployment ke lingkungan Staging..."
+    - echo "Aplikasi berhasil di-deploy!"
+  only:
+    - main
