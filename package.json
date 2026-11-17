@@ -1,0 +1,18 @@
+{
+  "name": "git-test-app",
+  "version": "1.0.0",
+  "description": "Aplikasi Latihan DevOps - ELIA KHOLIFATUS SAADAH",
+  "main": "script.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "devops",
+    "github",
+    "docker",
+    "unit-test"
+  ],
+  "author": "ELIA KHOLIFATUS SAADAH <kantor.not.endangwahyu.xyz@gmail.com>",
+  "license": "ISC"
+}
