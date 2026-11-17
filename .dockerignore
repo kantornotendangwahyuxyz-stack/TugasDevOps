@@ -1,0 +1,15 @@
+.git
+.gitignore
+.gitlab-ci.yml
+Jenkinsfile
+Dockerfile
+compose.yaml
+.env
+.env.example
+node_modules
+test
+*.md
+*.pdf
+*.jpeg
+*.jpg
+*.png
