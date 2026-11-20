@@ -87,7 +87,7 @@ Branch `main` telah dikonfigurasi dengan aturan **Protected Branch**:
 
 ## 📊 Kontribusi Commit
 
-Setiap anggota/pengembang memiliki minimal 5 commit atas nama sendiri:
+Pengembang memiliki minimal 5 commit atas nama sendiri:
 - **ELIA KHOLIFATUS SAADAH (`kantor.not.endangwahyu.xyz@gmail.com`):** > 5 Commit (Initial web layout, Dockerfile setup, Docker compose, unit test suite, CI/CD pipeline setup, README documentation, security audit, dan tag `uts-final`).
 
 ---
