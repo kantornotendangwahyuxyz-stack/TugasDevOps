@@ -68,8 +68,8 @@ node --test test/*.test.js
 
 - **Status Pipeline `main`:** 🟢 **Hijau (Passed)**
 - **Bukti Pipeline Gagal yang Telah Diperbaiki:**
-  - **Insiden Pipeline #104 (Gagal):** Pipeline gagal pada tahap `unit_test` karena fungsi `formatWaktu()` belum menangani input objek `Date` yang `undefined` dengan benar.
-  - **Perbaikan (Fixed):** Commit `fix(script): default parameter value added for formatWaktu` telah memperbaiki logika pengujian. Pipeline berikutnya (#105) sukses dan berstatus **Hijau**.
+    - **Insiden Pipeline #104 (Gagal):** Pipeline gagal pada tahap `unit_test` karena fungsi `formatWaktu()` belum menangani input objek `Date` yang `undefined` dengan benar.
+    - **Perbaikan (Fixed):** Commit `fix(script): default parameter value added for formatWaktu` telah memperbaiki logika pengujian. Pipeline berikutnya (#105) sukses dan berstatus **Hijau**.
 
 ---
 
