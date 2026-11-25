@@ -1,0 +1,45 @@
+# GitLab CI/CD Configuration for Laravel Application (ELIA KHOLIFATUS SAADAH)
+
+image: php:8.2-alpine
+
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  DOCKER_IMAGE_NAME: "laravel-devops-app"
+  DOCKER_IMAGE_TAG: "1.0.0"
+
+unit_test:
+  stage: test
+  before_script:
+    - apk add --no-cache composer php82-pdo php82-sqlite3
+    - composer install --prefer-dist --no-progress --no-interaction
+    - cp .env.example .env
+    - php artisan key:generate
+  script:
+    - echo "Menjalankan Laravel Unit Test..."
+    - php artisan test
+  only:
+    - main
+    - merge_requests
+
+build_docker:
+  stage: build
+  image: docker:24.0.5-cli
+  services:
+    - docker:24.0.5-dind
+  script:
+    - echo "Membangun Laravel Docker Image dengan tag $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG..."
+    - docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG .
+  only:
+    - main
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Melakukan simulasi deployment aplikasi Laravel ke lingkungan Staging..."
+    - echo "Aplikasi Laravel berhasil di-deploy!"
+  only:
+    - main
