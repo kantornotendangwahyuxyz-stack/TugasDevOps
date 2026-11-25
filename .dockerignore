@@ -1,0 +1,10 @@
+.git
+.gitignore
+.gitlab-ci.yml
+Jenkinsfile
+Dockerfile
+compose.yaml
+.env
+node_modules
+*.pdf
+*.md

@@ -1,0 +1,17 @@
+name: devops-laravel-app
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: laravel-devops-app:1.0.0
+    container_name: devops_laravel_container
+    restart: always
+    ports:
+      - "${PORT:-8080}:80"
+    environment:
+      - APP_ENV=${APP_ENV:-production}
+      - APP_KEY=${APP_KEY:-base64:c1ZsdmxwZ3lJc0psaDFvNFFqQnVxSjFzY3hhRkJXckY=}
+      - APP_DEBUG=${APP_DEBUG:-false}
+      - APP_URL=${APP_URL:-http://localhost:8080}
